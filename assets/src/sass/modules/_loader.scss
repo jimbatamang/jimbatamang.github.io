@@ -1,0 +1,49 @@
+/* ==========================================================================
+* Tooltips
+/* ========================================================================== */
+
+.loading{
+	position: relative;
+
+	@extend %clearfix;
+
+	> *{
+		opacity: 0.5;
+	}
+
+	&:after{
+		content:"";
+		position:absolute;
+		top: 0;
+		left:0;
+		width:100%;
+		height: 100%;
+		background:url(..images/ico-ajax-loader.gif) no-repeat scroll center center transparent;
+		opacity: 0.5;
+	}
+	&.loading:before {
+	  	content: "Loading...";
+	  	display: block;
+	  	font-weight: bold;
+	  	height: 0;
+	  	padding-top: 60px;
+	  	text-align: center;
+	}
+}
+
+.pageOverlay{
+	background:url(../images/bg-transparent-b.png);
+	background:rgba(0,0,0,0.8);
+	z-index:-1;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+
+	&.active{
+		opacity: 1;
+		z-index: 4;
+		cursor: pointer;
+	}
+}

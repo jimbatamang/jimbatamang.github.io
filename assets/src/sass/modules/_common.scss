@@ -1,0 +1,13 @@
+/*-----------------------------------
+* Video
+*------------------------------------*/
+.table {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.td {
+	display: table-cell;
+	vertical-align: middle;
+}

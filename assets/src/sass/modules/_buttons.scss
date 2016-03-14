@@ -1,0 +1,60 @@
+/* ==========================================================================
+* Jimba Tamang
+									<span class="btn-txt">Explore</span>
+								</span>
+								
+								<span class="touch-close">
+									<i class="icon-cross"></i>
+								</span>: BUTTONS
+* Created by Jimba Tamang (Gee Multimedia) on Feb 03, 2015
+* ========================================================================== */
+
+.button, button {
+	background: $color-3;
+	border:0.1rem solid lighten($color-4, 20%);
+	border-radius: 3px;
+	color: $color-4;
+	font-size: 1.8rem;
+	line-height: 4rem;
+	font-weight: 400;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	padding: 0 4rem;
+	height: 4rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-shadow: 0 -1px 1px rgba($white, 0.75);
+
+
+	transition:background 0.25s linear;
+	@extend %webfont-1;
+
+	html.no-touchevents & {
+		&:hover {
+			background: lighten($color-2, 30%);
+		}	
+	}
+
+	/* important while using icon */
+	.btn-txt, i {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&.full-width {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.big-font {
+		font-size: 2rem;
+		font-weight: 300;
+
+	}
+
+
+}

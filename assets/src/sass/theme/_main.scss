@@ -1,0 +1,327 @@
+/* ==========================================================================
+
+// Main Content  File 
+// Website theme styles.
+
+/* ========================================================================== */
+
+html {
+	font-size: $base-font-size;
+	/* Box sizing*/
+	box-sizing: border-box;
+}
+
+body {
+	font-size: $body-font-size;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	background-color: $color-1;
+	color: $color-4;
+
+	@extend %webfont-1;
+	font-weight: 400;
+}
+
+*,
+*:after,
+*:before {
+  	box-sizing:inherit;
+}
+
+/* Smooth fonts on webkit and firefox */
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.wrapper {
+	width: 98%;
+	max-width: 1200px; // defining with px to prevent get resize when changing the base font size.
+	margin-left: auto;
+	margin-right: auto;
+
+	&--header {
+		display: table;
+		table-layout: fixed;
+		height: 100%;
+	}
+}
+
+.row {
+	@extend %clearfix;
+}
+
+a {
+	transition: color 0.25s lienar;
+
+	&:link, &:visited {
+		color:$color-4;
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: $color-2;
+	}
+}
+
+/* Image */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Section */
+.section {
+	padding: 6rem 0;
+
+	&--alt {
+		background-color: $color-3_1;
+		border-top: 0.1rem solid $color-3;
+		border-bottom: 0.1rem solid $color-3;
+	}
+
+	&__header {
+		margin-bottom: 6rem;
+		@include grid(12);
+	}
+}
+
+
+/* PROJECTS */
+.project {
+	&__item {
+		position: relative;
+		margin-bottom: $gutter * 2;
+		padding: 0 $gutter;
+		max-width: 60rem;
+		margin-left: auto;
+		margin-right: auto;
+		clear: both;
+
+		@media (min-width: $small) and (orientation:landscape),
+				(min-width: $medium) {
+					clear:none;
+					@include grid(6);
+					margin-bottom: $gutter * 2;
+				}
+	}
+}
+
+.item {
+
+	&__initial {
+		img {
+			display: block;
+		}
+	}
+
+	&__overlay {
+		position: absolute;
+		left: $gutter;
+		top: 0;
+		right: $gutter;
+		bottom: 0;		
+		opacity: 0;
+		z-index: 9;
+	}
+
+	&__video {
+		 height: 100%;
+		 width: 100%;
+		 display: block;
+	}
+}
+
+.visite-site {
+	position: absolute;
+	text-align: center;
+	left: 0;
+	bottom: 3rem;
+	width: 100%;
+
+	&.alt {
+		> a {
+			&:link, &:visited, &:hover {
+				color:$color-1;
+			}
+
+
+		}
+	}
+}
+
+.touch-explore {
+	position: absolute;
+	left: 50%;
+	bottom: 2rem;
+	transform:translateX(-50%);
+	z-index: 10;
+
+	html.no-touchevents & {
+		display: none;
+	}
+}
+
+.touch-close {
+	background-color: #999999;
+  	color: #fff;
+
+	position: absolute;
+	padding: 0;
+	width: 3rem;
+	height: 3rem;
+	right: 1rem;
+	top: -1rem;
+	opacity: 0;
+	font-size: 1.4rem;
+	line-height: 3rem;
+	text-align: center;
+}
+
+/* CONTACT SECTION */
+.select {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background-color: $color-3_1; // light gray
+	border: 0.1rem solid $color-3; // gray
+	display: inline-block;
+	position: relative;
+	transition: border-color 0.25s;
+
+	@media (min-width: $small) {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	&:before {
+		content:"";
+		width:1rem;
+		height: 1rem;
+		border-radius: 50%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: -0.5rem 0 0 -0.5rem;
+		background-color: $color-4;
+		opacity: 0;
+		transition: background-color 0.25s, opacity 0.25s;
+
+	}
+
+	&--active {
+		&:before {
+			opacity:1;
+
+		}
+	}
+
+}
+
+.contact {
+	&__item {
+		&:not(:last-of-type) {
+			margin-bottom: 3rem;
+		}
+
+		@include grid(12);
+		
+		@media (min-width: $medium) {
+			@include grid(8);
+		}
+	}
+
+	&__header {
+		display: table;
+		table-layout: fixed;
+		width: 100%;
+		margin-bottom: 2rem;
+		cursor: pointer;
+
+		> span {
+			display: table-cell;
+			vertical-align: middle;
+
+			&:first-child {
+				width:4rem;
+
+				@media (min-width: $small) {
+					width:6.5rem;
+				}
+			}
+		}
+
+		// On hover / active
+		&:hover, &.collapsible__trigger--active {
+			.select {
+				border-color: $color-4;
+			}
+		}
+
+		&.collapsible__trigger--active {
+			.select {
+				&:before {
+					opacity:1;
+				}
+			}
+		}
+
+
+
+	}
+
+	&__entry {
+		padding-left: 4rem;
+
+		@media (min-width: $small) {
+			padding-left: 6.5rem;
+		}
+	}
+
+	&__business {
+		@extend %clearfix;
+		padding-top: 2rem;
+
+		.col {
+			margin-bottom: 4rem;
+
+
+			@media (min-width: $small) {
+
+				float: left;
+				width:50%;
+
+				&:first-of-type {
+					padding-right:4rem;
+				}
+
+			}
+
+		}
+		
+	}
+
+}
+
+.chd__title {
+	font-weight: 400;
+	> span {
+		display: block;
+	}
+}
+.chd__main {
+	font-size: 2rem;
+
+	@media (min-width: $small) {
+		font-size: 2.4rem;
+	}
+
+}
+.chd__note {
+	font-size: 1.8rem;
+	color: darken($gray, 20%);
+}
+
+

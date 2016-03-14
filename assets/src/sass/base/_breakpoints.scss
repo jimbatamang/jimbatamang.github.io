@@ -1,0 +1,70 @@
+/* ==========================================================================
+* Jimba Tamang
+									<span class="btn-txt">Explore</span>
+								</span>
+								
+								<span class="touch-close">
+									<i class="icon-cross"></i>
+								</span>: BREAK POINTS (MEDIA QUERIES)
+* Created by Jimba Tamang (Gee Multimedia) on Feb 03, 2015
+* ========================================================================== */
+
+/* ------------------------------------------------------------
+* bp refers break points
+* eg.
+* @include bp(small-only) { ....... }
+-------------------------------------------------------------- */
+
+@mixin bp($point) {
+
+		/* Small Screen */
+		@if $point == small-only {
+			@media only screen and (max-width : $small-max ) { @content; }
+		}
+
+		@else if $point == small-portrait {
+			@media only screen and (max-width : $small-max ) and (orientation:portrait) { @content; }
+		}
+
+		@else if $point == small-above {
+			@media only screen and (min-width : $small-min ) { @content; }
+		}
+
+
+		/* Medium Screen */
+		@else if $point == medium-only {
+			@media only screen and (min-width : $medium-min ) and (max-width: $medium-max) { @content; }
+		}
+
+		@else if $point == medium-portrait {
+			@media only screen and (min-width : $medium-min ) and (max-width: $medium-max) and (orientation:portrait) { @content; }
+		}
+
+		@else if $point == medium-landscape {
+			@media only screen and (min-width : $medium-min ) and (max-width: $medium-max) and (orientation:landscape) { @content; }
+		}
+
+		@else if $point == medium-above {
+			@media only screen and (min-width : $medium-min ) { @content; }
+		}
+
+		/* Standard Screen */
+
+		@else if $point == standard-only {
+			@media only screen and (min-width : $standard-min ) and (max-width : $standard-max ) { @content; }
+		}
+
+		@else if $point == standard-portrait {
+			@media only screen and (min-width : $standard-min ) and (max-width : $standard-max ) and (orientation:portrait) { @content; }
+		}
+
+		@else if $point == standard-landscape {
+			@media only screen and (min-width : $standard-min ) and (max-width : $standard-max ) and (orientation:landscape) { @content; }
+		}
+
+		@else if $point == standard-above {
+			@media only screen and (min-width : $standard-min ) { @content; }
+		}
+
+
+}

@@ -1,0 +1,43 @@
+/* // ==========================================================================
+
+  	Base HTML framework
+ 	Author: Jimba Tamang [jimba.com.np]
+  	Version: 0.1.1 
+
+
+/* Base - All base files with Grid system
+========================================================================== */
+	@import 'base/_icons.scss';
+	@import 'base/_base.scss'; 
+	@import 'base/_mixins.scss';
+	@import 'base/_normalize.scss';
+	@import 'base/_placeholders.scss';
+	@import 'base/_grid.scss'; 
+	@import 'base/_include-media.scss';
+
+
+/* MODULES - Individual site elements.
+========================================================================== */
+	@import 'modules/_old-browser.scss';
+	@import 'modules/_loader.scss';
+	@import 'modules/_common.scss';
+	@import 'modules/_typography.scss';
+	@import 'modules/_buttons.scss';
+	@import 'modules/_collapsible.scss';
+	@import 'modules/_forms.scss';
+	@import 'modules/_lists.scss';
+	@import 'modules/_tooltips.scss';
+
+
+/* Theme - Theme styles for each area of the site.
+========================================================================== */
+	@import 'theme/_main.scss';
+	@import 'theme/_header.scss';
+	@import 'theme/_nav.scss';
+	@import 'theme/_footer.scss';
+	@import 'theme/_plugin-overwrite.scss';
+	@import 'theme/_shame.scss'; // Hack your world
+
+/* Page Specific
+========================================================================== */
+	@import 'theme/_home.scss';

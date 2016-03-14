@@ -1,0 +1,20 @@
+/* ==========================================================================
+* Jimba Tamang
+									<span class="btn-txt">Explore</span>
+								</span>
+								
+								<span class="touch-close">
+									<i class="icon-cross"></i>
+								</span>: PLACEHOLDER
+* Created by Jimba Tamang (Gee Multimedia) on Feb 03, 2015
+* Placeholder styles to be included in rendered selectors. Un-used placeholders will not be rendered in the build css file.
+* ========================================================================== */
+
+
+/*
+ * eg. @extend %clearfix;
+ */
+
+%clearfix {
+	@include clearfix;
+}

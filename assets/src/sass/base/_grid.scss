@@ -1,0 +1,44 @@
+/* ==========================================================================
+* Jimba Tamang
+									<span class="btn-txt">Explore</span>
+								</span>
+								
+								<span class="touch-close">
+									<i class="icon-cross"></i>
+								</span> Flexible Grid System
+* Created by Jimba Tamang (Gee Multimedia) on Feb 03, 2015
+* ========================================================================== */
+
+/* ------------------------------------------------------------
+* Grid Mixing
+* eg: @include grid(5)
+* eg: @include grid(5,2) if you want to push column by 2 grid.
+-------------------------------------------------------------- */
+
+@mixin grid($col, $push:0) {
+        float:left;
+        padding-left: $gutter;
+        padding-right: $gutter;
+        width: ($unit * $col);
+}
+
+/* ------------------------------------------------------------
+* Enable only if you want to generate grid Classes: none semantic
+* eg: .grid-1, .grid-2
+* eg: .push-1, .push-2
+-------------------------------------------------------------- */
+
+//@for $i from 1 through $grid-columns {
+//        .grid-#{$i} {
+//                float: left;
+//                width: ($unit * $i) - ($gutter * 2);
+//                margin-left: $gutter;
+//                margin-right: $gutter;
+//        }
+//}
+
+//@for $i from 1 through $grid-columns {
+//        .push-#{$i} {
+//                margin-left: ($unit * $i) + $gutter;
+//        }
+//}

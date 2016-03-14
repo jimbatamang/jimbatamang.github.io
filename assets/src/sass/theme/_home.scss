@@ -1,0 +1,31 @@
+/* ==========================================================================
+ * Home Page
+/* ========================================================================== */
+.content, .sidebar {
+	background-color: rgba(gold, 0.5);
+}
+
+.content {
+	@include grid(12);
+
+	@include media(">small", "<=medium") {
+		@include grid(8);
+	}
+
+	@include media(">standard") {
+		@include grid(9);
+	}
+
+}
+
+.sidebar {
+	@include grid(12);
+
+	@include media(">small", "<=medium") {
+		@include grid(4);
+	}
+
+	@include media(">standard") {
+		@include grid(3);
+	}
+}

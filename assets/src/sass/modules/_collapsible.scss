@@ -1,0 +1,80 @@
+/* ==========================================================================
+* Jimba Tamang
+									<span class="btn-txt">Explore</span>
+								</span>
+								
+								<span class="touch-close">
+									<i class="icon-cross"></i>
+								</span>: Basic Collapsible
+* Created by Jimba Tamang (Gee Multimedia) on Feb 03, 2015
+* ========================================================================== */
+
+.collapsible {
+	margin:0;
+	padding: 0;
+
+	dt, dd {
+		margin:0;
+	}
+
+	dt {
+		background-color: lighten($color-2, 30%);
+		color: $color-1;
+		font-size: 1.4rem;
+		line-height: 1.5;
+		font-weight: bold;
+		padding: 6px 20px 6px 25px;
+		margin-bottom: 1px;
+		position: relative;
+		letter-spacing: -0.5px;
+		cursor: pointer;
+		transition:background 0.25s linear;
+
+		&:hover {
+			background-color: lighten($color-2, 50%);
+		}
+
+		i {
+			font-size: 2rem;
+			position: absolute;
+			right: 1rem;
+			top: 50%;
+			margin-top: -1rem;
+			color: inherit;
+
+			transition:transform 0.25s linear;
+		}
+
+		&.active {
+			background-color: $color-2;
+			color: $color-1;
+
+			i {
+				color: $color-1;
+				transform:rotate(90deg);
+			}
+		}
+		
+	}
+
+	dd {
+		display: none;
+		background-color: lighten($color-2, 80%);
+
+		padding: 2rem;
+		margin-bottom: 0.1rem;
+
+	}
+
+	&.arrow-right {
+		dt {
+			padding: 6px 25px 6px 20px;
+
+			i {
+				left: auto;
+				right: 10px;
+			}
+		}
+	}
+}
+

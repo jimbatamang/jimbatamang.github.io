@@ -1,0 +1,59 @@
+/* ==========================================================================
+* Jimba Tamang
+									<span class="btn-txt">Explore</span>
+								</span>
+								
+								<span class="touch-close">
+									<i class="icon-cross"></i>
+								</span>: MIXIN
+* Created by Jimba Tamang (Gee Multimedia) on Feb 03, 2015
+* ========================================================================== */
+
+/* ------------------------------------------------------------
+* CLEARFIX
+* eg. @include clearfix();
+-------------------------------------------------------------- */
+
+@mixin clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+
+  &:after, &:before {
+    content:"";
+    display:table;
+  }
+
+  &:after {
+    clear:both;
+  }
+
+}
+
+
+/* ------------------------------------------------------------
+* FONT FACE
+* eg. @include fontface('family', 'assets/fonts/', 'myfontname');
+-------------------------------------------------------------- */
+@mixin fontface($font-family, $font-url, $font-name) {
+  @font-face {
+    font: {
+      family: $font-family;
+      style: normal;
+      weight: normal;
+    }
+    src: url($font-url + $font-name + '.eot');
+    src: url($font-url + $font-name + '.eot#iefix') format('embedded-opentype'),
+       url($font-url + $font-name + '.svg#' + $font-name) format('svg'),
+       url($font-url + $font-name + '.woff') format('woff'),
+       url($font-url + $font-name + '.ttf')  format('truetype');
+       
+  }
+}
+
+
+/* ------------------------------------------------------------
+* Retina Specific
+-------------------------------------------------------------- */
+
+@mixin retina(){
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { @content; }
+}

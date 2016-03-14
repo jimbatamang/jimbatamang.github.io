@@ -1,0 +1,79 @@
+/* ==========================================================================
+* Jimba Tamang
+									<span class="btn-txt">Explore</span>
+								</span>
+								
+								<span class="touch-close">
+									<i class="icon-cross"></i>
+								</span>: BASE VARIABLES
+* Created by Jimba Tamang (Gee Multimedia) on Feb 03, 2015
+* All Global variables will be here.
+* ========================================================================== */
+
+/* ------------------------------------------------------------
+* GRID VARIABLES
+* By default, there will be 12 grids and 1% gutter space
+-------------------------------------------------------------- */
+$grid-columns: 12;
+$unit: (100% / $grid-columns);
+$gutter: 2rem;
+
+
+/* ------------------------------------------------------------
+* BASE FONT SIZES
+* $base-font-size is for HTML: it will will be 10px (16 x 62.5% = 10)
+* Using rem value
+* ------------------------------------------------------------- */
+$base-font-size: 62.5%;
+$body-font-size: 1.8rem;
+
+
+/* ------------------------------------------------------------
+* BREAK POINTS
+* $base-font-size is for HTML: it will will be 10px (16 x 62.5% = 10)
+* Using rem value
+* ------------------------------------------------------------- */
+
+$small-max: 47.9375em; // 767px
+$small: 48em; // 768px;
+
+$medium-max: 64em; // 1024px
+$medium: 64.0625em; // 1025px
+
+$standard: 90em; // 1440px;
+
+/*$small-max: 47.9375em; // 767px
+$medium-min: 48em; // 768px
+$medium-max: 64em; // 1024px
+$standard-min: 64.0625em; // 1025px
+$standard-max: 90em; // 1440px
+*/
+
+
+/* ------------------------------------------------------------
+* GLOBAL COLORS
+* Let's define base colors and manipulate/mix them later.
+* ------------------------------------------------------------- */
+/* Colours -  Defined only once */
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+$gray_light: #eee;
+$primary-text-color: #4a4a4a;
+$highlight: #00bcd4;
+
+/* Define Web Colors - mix them etc */
+$color-1: $white;
+$color-2: $black;
+$color-3: $gray;
+$color-3_1: $gray_light;
+$color-4: $primary-text-color;
+$color-5: $highlight;
+
+/* ------------------------------------------------------------
+* FONTS - PLACEHOLDER + VARIABLES
+* ------------------------------------------------------------- */
+%webfont-1 {
+	font-family: 'Roboto', sans-serif;
+}
+$webfont-1: 'Roboto', sans-serif;
