@@ -1,18 +1,12 @@
 {
-  "name": "jimbatamang"
+  "name": "jimbatamang",
   "repository": "0.0.1",
   "description": "Fully responsive, simple portfolio website.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jimbatamang/website.git"
     },
-  "keywords": {
-    "portfolio",
-    "HTML5",
-    "boilerplate",
-    "base",
-    "jimbatamang"
-    },
+  "keywords": ["portfolio", "html5", "simple", "boilerplate", "base"],
   "author": "Jimba Tamang <jimbatamang@gmail.com>",
   "license": "private",
   "bugs": {

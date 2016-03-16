@@ -31,11 +31,11 @@
 
 /* Theme - Theme styles for each area of the site.
 ========================================================================== */
+	@import 'theme/_plugin-overwrite.scss';
 	@import 'theme/_main.scss';
 	@import 'theme/_header.scss';
 	@import 'theme/_nav.scss';
 	@import 'theme/_footer.scss';
-	@import 'theme/_plugin-overwrite.scss';
 	@import 'theme/_shame.scss'; // Hack your world
 
 /* Page Specific

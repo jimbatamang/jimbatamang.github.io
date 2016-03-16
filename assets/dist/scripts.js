@@ -10424,22 +10424,41 @@ $('.project__item').each(function(){
 
 		if( !Modernizr.touchevents) {
 
+			var timer;
+
 			$that.hover( function() {
 			  	// get video
 			  	$video = $this.find('.flex-active-slide video');
-			  	if($video.length){
-			    	$video.get(0).play();
-			    }
-			    // Show overlay
-			  	$overlay
-			  		.addClass('active-hover')
-				  	.animate({
-				  		opacity:1
-				  	});
+
+			  	if(timer) {
+			  		clearTimeout(timer);
+			  	}
+			  	
+			  
+
+				  	if($video.length){
+				    	$video.get(0).play();
+				    }
+				    // Show overlay
+				  	$overlay
+				  		.addClass('active-hover')
+					  	.animate({
+					  		opacity:1
+					  	});
+
+
+
 
 			    
 			  }, function() {
 			  	// Else conditoin - hover out
+
+			  	// if(timer) {
+			  	// 	clearTimeout(timer);
+			  	// 	timer = null;
+			  	// }
+
+			  	timer = setTimeout(function(){
 
 			  	$overlay
 				  	.removeClass('active-hover')
@@ -10456,6 +10475,11 @@ $('.project__item').each(function(){
 					    }
 
 				  	});
+
+				  	// clearTimeout(timer);
+
+
+				  }, 1000);
 
 			  });
 

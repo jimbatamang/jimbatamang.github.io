@@ -1,158 +1,3 @@
-/*
- * jQuery FlexSlider v2.6.0
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the GPLv2 and later license.
- * http://www.gnu.org/licenses/gpl-2.0.html
- *
- * Contributing author: Tyler Smith (@mbmufffin)
- *
- */
-/* ====================================================================================================================
- * FONT-FACE
- * ====================================================================================================================*/
-
-/* ====================================================================================================================
- * RESETS
- * ====================================================================================================================*/
-.flex-container a:hover,
-.flex-slider a:hover {
-  outline: none;
-}
-.slides,
-.slides > li,
-.flex-control-nav,
-.flex-direction-nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.flex-pauseplay span {
-  text-transform: capitalize;
-}
-/* ====================================================================================================================
- * BASE STYLES
- * ====================================================================================================================*/
-.flexslider {
-  margin: 0;
-  padding: 0;
-}
-.flexslider .slides > li {
-  display: none;
-  -webkit-backface-visibility: hidden;
-  position: relative;
-}
-.flexslider .slides img {
-  display: block;
-}
-.flexslider .slides:after {
-  content: "\0020";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-html[xmlns] .flexslider .slides {
-  display: block;
-}
-* html .flexslider .slides {
-  height: 1%;
-}
-.no-js .flexslider .slides > li:first-child {
-  display: block;
-}
-/* ====================================================================================================================
- * DEFAULT THEME
- * ====================================================================================================================*/
-.flexslider {
-  margin: 0;
-  position: relative;
-  zoom: 1;
-  background-color: #fff;
-}
-.flexslider .slides {
-  zoom: 1;
-}
-.flexslider .slides img {
-  -moz-user-select: none;
-}
-.flex-viewport {
-  max-height: 2000px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.flex-direction-nav {
-  *height: 0;
-}
-.flex-direction-nav a {
-  text-decoration: none;
-  display: block;
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  overflow: hidden;
-  opacity: 0.4;
-  cursor: pointer;
-  text-align: center;
-
-  background-color: #999999;
-  color: #fff;
-  border-radius: 3px;
-
-  width:30px;
-  height:30px;
-  margin:-15px -10px 0;
-}
-
-/*@media (min-width: 1025px ) {
-  width: 50px;
-  height: 50px;
-  margin: -25px -20px 0;
-}
-*/
-.flex-direction-nav a:before {
-  font-family: "jimba_2016";
-  display: inline-block;
-  content: '\e901';
-
-  font-size:18px;
-  line-height:30px;
-}
-
-/*@media (min-width: 1025px ) {
-  font-size: 30px;
-  line-height: 50px;
-}
-*/
-
-.flex-direction-nav a.flex-next:before {
-  content: '\e902';
-}
-
-.flexslider .flex-direction-nav a:hover {
-  opacity: 0.7;
-}
-
-.flexslider .flex-direction-nav .flex-prev {
-  left: 0;
-}
-.flexslider .flex-direction-nav .flex-next {
-  right: 0;
-}
-
-.flex-direction-nav .flex-disabled {
-  opacity: 0!important;
-  filter: alpha(opacity=0);
-  cursor: default;
-  z-index: -1;
-}
-
 /* // ==========================================================================
 
   	Base HTML framework
@@ -2698,6 +2543,179 @@ select {
 ========================================================================== */
 /* ==========================================================================
 
+// Plugin overwite
+// Styles to be fixed or re-factured at a later date.
+
+/* ========================================================================== */
+/* ============================
+ * Flexslider
+ * ==========================*/
+/* line 12, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-container a:hover,
+.flex-slider a:hover {
+  outline: none;
+}
+
+/* line 16, assets/src/sass/theme/_plugin-overwrite.scss */
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 24, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+
+/* ============================
+ * BASE STYLES
+ * ==========================*/
+/* line 30, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 34, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+  position: relative;
+}
+
+/* line 39, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .slides img {
+  display: block;
+}
+
+/* line 42, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 50, assets/src/sass/theme/_plugin-overwrite.scss */
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+
+/* line 53, assets/src/sass/theme/_plugin-overwrite.scss */
+* html .flexslider .slides {
+  height: 1%;
+}
+
+/* line 56, assets/src/sass/theme/_plugin-overwrite.scss */
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+
+/* =========================
+ * DEFAULT THEME
+ * =========================*/
+/* line 62, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider {
+  margin: 0;
+  position: relative;
+  zoom: 1;
+  background-color: #fff;
+}
+
+/* line 68, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .slides {
+  zoom: 1;
+}
+
+/* line 71, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .slides img {
+  -moz-user-select: none;
+}
+
+/* line 74, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-viewport {
+  max-height: 2000px;
+  transition: all 1s ease;
+}
+
+/* line 83, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-direction-nav {
+  *height: 0;
+}
+
+/* line 86, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0.4;
+  cursor: pointer;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  margin: -15px -10px 0;
+}
+/* line 104, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-direction-nav a:link, .flex-direction-nav a:visited, .flex-direction-nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 110, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-direction-nav a:before {
+  font-family: "jimba_2016";
+  display: inline-block;
+  content: '\e901';
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* line 119, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-direction-nav a.flex-next:before {
+  content: '\e902';
+}
+
+/* line 123, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .flex-direction-nav a:hover {
+  opacity: 0.7;
+}
+
+/* line 127, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .flex-direction-nav .flex-prev {
+  left: 0;
+}
+
+/* line 130, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .flex-direction-nav .flex-next {
+  right: 0;
+}
+
+/* line 134, assets/src/sass/theme/_plugin-overwrite.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: 0 !important;
+  filter: alpha(opacity=0);
+  cursor: default;
+  z-index: -1;
+}
+
+/* line 141, assets/src/sass/theme/_plugin-overwrite.scss */
+.flexslider .slides > li {
+  background-color: #fff;
+}
+
+/* ==========================================================================
+
 // Main Content  File 
 // Website theme styles.
 
@@ -3112,17 +3130,6 @@ footer {
   padding-left: 2rem;
   padding-right: 2rem;
   width: 100%;
-}
-
-/* ==========================================================================
-
-// Plugin overwite
-// Styles to be fixed or re-factured at a later date.
-
-/* ========================================================================== */
-/* line 9, assets/src/sass/theme/_plugin-overwrite.scss */
-.flexslider .slides > li {
-  background-color: #fff;
 }
 
 /* ==========================================================================
