@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>Jimba Tamang - Front-end Developer</title>
-		<meta name="description" content="Sr. Front-end/Web Developer Melbourne, available for freelancing" />
+		<meta name="description" content="Frontend web developer, based in Melbourne Australia" />
+		<meta name="keybaords" content="frontend, front-end, web, developer, melbourne, australia, freelancer, html, css, js">
 		<meta name="author" content="Jimba Tamang" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-			
 
 		<!-- Favicons -->
 		<link rel="apple-touch-icon" sizes="57x57" href="/assets/static/images/icons/apple-icon-57x57.png">
@@ -29,14 +29,14 @@
 
 		<!-- styles -->
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-		<link href='assets/build/style.css' rel='stylesheet' type='text/css'>
+		<link href='assets/dist/styles.css?v=001' rel='stylesheet' type='text/css'>
 
 
 	</head>
 	<body>
 		<div id="old-ie-message">You appear to be using an outdated browser. Please upgrade your browser for a better experience. <a href="#" id="close-ie-msg">X</a></div>
 		<noscript>
-		<div class="outside-message">This site requires JavaScript to display correctly!</div>
+			<div class="outside-message">This site requires JavaScript to display correctly!</div>
 		</noscript>
 		
 		<header class="header" role="banner">
@@ -44,7 +44,7 @@
 				<div class="header__entry">
 					<div class="header__ctn-area">
 						<h1 class="header__title">Jimba Tamang</h1>
-						<h2 class="header__subtitle">Front-end Developer,<br>Lives in Melbourne Australia.</h2>
+						<h2 class="header__subtitle">Frontend Developer,<br>Lives in Melbourne Australia.</h2>
 					</div>
 				</div>
 				
@@ -198,7 +198,7 @@
 		<section class="section contact">
 			<div class="wrapper">
 				<header class="section__header">
-					<h2>So many ways to communicate<br> <strong>just tell me who you are</strong></h2>
+					<h2>Many ways to talk<br> <strong>just tell me who you are</strong></h2>
 				</header>
 
 				<div class="contact-options collapsible row">
@@ -217,9 +217,9 @@
 						</header>
 
 						<div class="contact__entry collapsible__target" style="display: none;">
-							<p>If you wants to share your thoughts or wants to discuss some of your projects, you can email me at jimbatamang@gmail.com.</p>
+							<p>If you wants to share your thoughts or discuss some of your projects, you can email me at jimbatamang@gmail.com.</p>
 							<p>I usually attent some local IT meetups, so you can meet me there as well.</p>
-							<p>Or, for timebeing why not talk at Twitter?</p>
+							<p>Or, meanwhile why not talk at <a href="//twitter.com/jimbatamang" title="@jimbatamang twitter" target="_blank" class="twitter">Twitter?</a></p>
 						</div>
 
 					</article>
@@ -240,13 +240,15 @@
 						</header>
 
 						<div class="contact__entry collapsible__target" style="display: none;">
-							<p>I’m not a full time Freelancer at the moment though I can help you to make or fix your websites. If you do not have a really tight deadlines, that’s awesome, let’s talk tonight.</p>
+							<p>I’m not a full time Freelancer at the moment though I can help you to make or fix your websites.</p>
 
 							<div class="contact__business">
 								<div class="col">
 									View my online profile<br/> at upWork &amp; hire me
 									<figure>
+										<a href="https://www.upwork.com/o/profiles/users/_~01f2a25fc62c25707c/" title="Visit Jimba's online profile at upwork.com" target="_blank">
 										<img src="assets/static/images/logo-upwork.png" alt="Logo Upwork">
+										</a>
 									</figure>
 								</div>
 
@@ -273,10 +275,18 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src='assets/build/scripts.js' ></script>
-		<!--
-		* Use this minified version on production *
-		<script type="text/javascript" src='assets/build/js/scripts.min.js' ></script> -->
+		<script type="text/javascript" src='assets/dist/scripts.js?v=001' ></script>
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-15068224-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 		
 	</body>
 </html>

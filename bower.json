@@ -1,0 +1,38 @@
+{
+  "name": "Gee Base",
+  "version": "0.0.1",
+  "homepage": "//www.ggg.com.au/gee-base",
+  "authors": [
+    "Jimba Tamang <jimbatamang@gmail.com>"
+  ],
+  "description": "Simple, elegant and maintainable HTML Foundation",
+  "main": "index.html",
+  "keywords": [
+    "base",
+    "foundation",
+    "html-foundation",
+    "media-queries",
+    "media-query",
+    "mediaquery",
+    "sass",
+    "scss",
+    "rwd",
+    "responsive",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".sass-cache",
+    "dist",
+    "src/components"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4"
+  },
+  "dependencies": {
+    "flexslider": "^2.6.0"
+  }
+}

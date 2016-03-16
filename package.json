@@ -6,6 +6,7 @@
     "gulp": "~3.9.1",
     "gulp-autoprefixer": "3.1.0",
     "gulp-cache": "~0.4.2",
+    "gulp-clean": "^0.3.2",
     "gulp-combine-media-queries": "^0.2.0",
     "gulp-concat": "~2.6.0",
     "gulp-if-else": "^1.0.3",
