@@ -1,1 +1,0 @@
-{"/Volumes/Work/server/jimba_2016/gulpfile.js":{"sha1":"86b747972bdda0d33cca08d1ad55be4cac0fcaad","tasks":{"sass":{"name":"sass","dependencies":""},"css":{"name":"css","dependencies":"sass"},"scripts":{"name":"scripts","dependencies":""},"watch":{"name":"watch","dependencies":""},"default":{"name":"default","dependencies":"sass css scripts watch"}}}}
