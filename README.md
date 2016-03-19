@@ -1,5 +1,3 @@
-# website
+# jimbatamang.com
 
-Well, this is my personal website and it's still in progress.
-
-thanks,
+Personal website of Jimba Tamang, Frontend Developer based in Melbourne Australia.
