@@ -716,7 +716,7 @@ h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 
 /* line 18, assets/src/sass/modules/_typography.scss */
 h1 {
-  font-size: 4.2rem;
+  font-size: 4rem;
 }
 @media (min-width: 48em) {
   /* line 18, assets/src/sass/modules/_typography.scss */
@@ -727,7 +727,7 @@ h1 {
 
 /* line 26, assets/src/sass/modules/_typography.scss */
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 @media (min-width: 48em) {
   /* line 26, assets/src/sass/modules/_typography.scss */
@@ -1611,13 +1611,25 @@ html.no-touchevents .touch-explore {
 }
 /* line 76, assets/src/sass/theme/_header.scss */
 .header__title {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #000;
 }
-/* line 81, assets/src/sass/theme/_header.scss */
+@media (min-width: 48em) {
+  /* line 76, assets/src/sass/theme/_header.scss */
+  .header__title {
+    margin-bottom: 2rem;
+  }
+}
+/* line 85, assets/src/sass/theme/_header.scss */
 .header__subtitle {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.2;
+}
+@media (min-width: 48em) {
+  /* line 85, assets/src/sass/theme/_header.scss */
+  .header__subtitle {
+    font-size: 3rem;
+  }
 }
 
 /* ==========================================================================
