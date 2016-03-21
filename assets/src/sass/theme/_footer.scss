@@ -13,3 +13,7 @@ footer {
 .copyright {
 	@include grid(12);
 }
+
+.host-details {
+	float: right;
+}

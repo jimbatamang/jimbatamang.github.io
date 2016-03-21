@@ -55,15 +55,21 @@ body {
 }
 
 a {
-	transition: color 0.25s lienar;
+	transition: color 0.15s linear, border-color 0.15s linear;
 
 	&:link, &:visited {
 		color:$color-4;
 		text-decoration: none;
+		border-bottom: 0.1rem dotted lighten($color-4, 20%);
 	}
 
 	&:hover {
 		color: $color-2;
+		border-bottom-color: $color-2;
+	}
+
+	&.no-border {
+		border-bottom: none;
 	}
 }
 
