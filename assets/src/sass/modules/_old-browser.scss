@@ -2,7 +2,7 @@
    Message for Old IE user
    ========================================================================== */
 
-#old-ie-message, .outside-message {
+.old-browser-message, .outside-message {
   position: fixed;
   width: 100%;
   left: 0;
@@ -19,7 +19,7 @@
   padding:5px 10px;
   display: none;
 
-  html.ie9-below & {
+  html.no-csstransitions & {
     display: block;
   }
 }
@@ -30,11 +30,12 @@
   font-size: 18px;
 }
 
-#close-ie-msg {
+.close-oldbrowser-msg {
   background-color: red;
   color: #fff;
   text-decoration: none;
   display: inline;
   display: inline;
   padding:2px 5px;
+  cursor: pointer;
 }

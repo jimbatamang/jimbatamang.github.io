@@ -239,15 +239,6 @@ $('.project__item').each(function(){
  });
 
 
-// $(window).on('load', function(){
-
-// 	if(document.querySelector('video').playing){ // checks if element is playing right now
-// 	    // Do anything you want to
-
-// 	    console.log('video playing');
-// 	} else {
-// 		console.log('video not playing');
-// 	}
-
-// });
-
+$('.close-oldbrowser-msg').on('click', function(){
+	$(this).parent().fadeOut();
+});

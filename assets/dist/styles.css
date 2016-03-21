@@ -594,7 +594,7 @@ table {
    Message for Old IE user
    ========================================================================== */
 /* line 5, assets/src/sass/modules/_old-browser.scss */
-#old-ie-message, .outside-message {
+.old-browser-message, .outside-message {
   position: fixed;
   width: 100%;
   left: 0;
@@ -611,7 +611,7 @@ table {
   display: none;
 }
 /* line 22, assets/src/sass/modules/_old-browser.scss */
-html.ie9-below #old-ie-message, html.ie9-below .outside-message {
+html.no-csstransitions .old-browser-message, html.no-csstransitions .outside-message {
   display: block;
 }
 
@@ -623,13 +623,14 @@ html.ie9-below #old-ie-message, html.ie9-below .outside-message {
 }
 
 /* line 33, assets/src/sass/modules/_old-browser.scss */
-#close-ie-msg {
+.close-oldbrowser-msg {
   background-color: red;
   color: #fff;
   text-decoration: none;
   display: inline;
   display: inline;
   padding: 2px 5px;
+  cursor: pointer;
 }
 
 /* ==========================================================================
